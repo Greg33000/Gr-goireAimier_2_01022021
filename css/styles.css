@@ -1,0 +1,51 @@
+/* CSS du projet 2 : Réservia */
+
+#logo_img
+{
+    max-width: 33%;
+	max-height: 33%;
+}
+.icones_filtres
+{
+    border-radius: 100%;
+    background-color: #DEEBFF;
+    color:#0065FC;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 34px;
+    width: 34px;
+}
+.fa-map-marker-alt
+{
+    background-color: #F2F2F2;
+}
+#filtres
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: flex-start;
+    align-items: center;
+    max-width: 100%;
+}
+.filtres
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: center;
+    margin:0px 10px;
+    align-items:center;
+    border-radius: 32px;
+    border:#F2F2F2 2px solid;
+    height:2em;
+    border-left:none;
+    
+}
+.filtres p
+{
+    padding:0px 15px 0px 10px;
+    margin:0px 0px;
+}
