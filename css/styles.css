@@ -1,10 +1,80 @@
 /* CSS du projet 2 : Réservia */
 
+
+/* CSS du projet de l'entête et du nav */
 #logo_img
 {
     max-width: 33%;
 	max-height: 33%;
 }
+/* CSS de la partie haute */
+
+/* fonction recherche */
+#Element_Haut form p
+{
+    height: 38px;
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    border:1px #F2F2F2 solid;
+    border-radius: 10px 10px 10px 10px;
+    flex-wrap:nowrap;
+    width:320px;
+    min-width: 320px;
+    border-right: none;
+    
+}
+#icone_géo
+{
+    background-color: #F2F2F2;
+    border-radius: 10px 0px 0px 10px;
+    border-left:none;
+    height:40px ;
+    width:40px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+#recherche
+{
+    height:38px;
+    border:none;
+    width: 210px;
+}
+#mot_recherche
+{
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+    color:white;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
+    height:40px ;
+    padding: 0px 10px;
+
+}
+#icone_recherche
+{
+    background-color: #0065FC;
+    border-radius: 10px 10px 10px 10px;
+    color:white;
+    height:40px ;
+    min-width:40px;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items: center;
+    display:none;
+}
+
+/* Icones "filtres" */
 .icones_filtres
 {
     border-radius: 100%;
@@ -14,8 +84,8 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 34px;
-    width: 34px;
+    height: 36px;
+    width: 36px;
 }
 .fa-map-marker-alt
 {
@@ -49,3 +119,4 @@
     padding:0px 15px 0px 10px;
     margin:0px 0px;
 }
+/* CSS de la partie milieu sur les logements */
