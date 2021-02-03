@@ -1,5 +1,28 @@
 /* CSS du projet 2 : Réservia */
 
+@import url(https://fr.allfont.net/allfont.css?fonts=raleway-regular);
+
+body
+{
+    font-family: 'Raleway Regular', arial;
+    font-weight: normal;
+    font-style: normal;
+    display:flex;
+    flex-direction:column;
+    justify-content:flex-start ;
+    align-items: center;
+    flex-wrap:nowrap;
+}
+#entête, #Element_Haut, #hébergement, #populaire, #activité
+{
+    width: 98%;
+}
+#footer
+{
+    width: 100%;
+    background-color: yellow;
+}
+
 
 /* CSS du projet de l'entête et du nav */
 #logo_img
@@ -124,21 +147,48 @@
 }
 /* CSS de la partie milieu sur les logements */
 
+#hébergement
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+}
+
+
+/* CSS de la partie gauche "Hébergements"*/
+
 #lieu
 {
     background-color: #F2F2F2;
     display:flex;
     flex-direction:column;
     flex-wrap:nowrap;
-    border-radius: 16px;
+    justify-content: flex-start;
+    border-radius: 16px; 
+    padding:16px;
+    width: 878px;
+}
+#lieu header
+{
+    margin:0px 16px;
+    
+}
+#lieu footer
+{
+    margin:16px 16px; 
+}
+#lieu header
+{
+    margin:0px 16px;
     
 }
 .article_hebergement
 {
     background-color: white;
     border-radius: 16px;
-    border:white 4px solid;
-    margin:32px;
+    border:white 5px solid;
+    margin: 0px 16px 32px 16px;
+    min-width:250px;
     
 }
 .article_hebergement p
@@ -155,30 +205,198 @@
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
+    min-width:100%;
     
 }
 .img_hebergement
 {
-    width:250px;
-    border-radius: 16px 16px 0px 0px;
-
-
-    
+    display:none; 
 }
-.dim_img{
-    background: url("../img/small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg") repeat scroll top left;
-    background-position: center;
-    background-size: cover;
-    width:250px;
-    height: 150px;
+.dim_img_heb
+{
+    
+    height: 125px;
     border-radius: 16px 16px 0px 0px;
     margin:0px 0px;
 }
+/* Utilisation de background pour "couper les photos" */
+#heb_1 div
+{
+    background: url("../img/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+}
+#heb_2 div
+{
+    background: url("../img/small/fred-kleber-gTbaxaVLvsg-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+}
+#heb_3 div
+{
+    background: url("../img/small/reisetopia-B8WIgxA_PFU-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+}
+#heb_4 div
+{
+    background: url("../img/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+}
+#heb_5 div
+{
+    background: url("../img/small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+}
+#heb_6 div
+{
+    background: url("../img/small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+}
 
-#organisation i:nth-child(1){color:#0065FC;;}
-#organisation i:nth-child(2){color:#F2F2F2;}
-#organisation i:nth-child(3){color:blue;}
-#organisation i:nth-child(4){color:blue;}
-#organisation i:nth-child(5){color:grey;}
+/* Pour les étoiles, simplification des lignes */
+#heb_1 i:nth-child(1){color:#0065FC;}
+#heb_1 i:nth-child(2){color:#0065FC;}
+#heb_1 i:nth-child(3){color:#0065FC;}
+#heb_1 i:nth-child(4){color:#0065FC;}
+#heb_1 i:nth-child(5){color:#F2F2F2;}
+
+#heb_2 i:nth-child(1){color:#0065FC;}
+#heb_2 i:nth-child(2){color:#0065FC;}
+#heb_2 i:nth-child(3){color:#0065FC;}
+#heb_2 i:nth-child(4){color:#0065FC;}
+#heb_2 i:nth-child(5){color:#0065FC;}
+
+#heb_3 i:nth-child(1){color:#0065FC;}
+#heb_3 i:nth-child(2){color:#0065FC;}
+#heb_3 i:nth-child(3){color:#0065FC;}
+#heb_3 i:nth-child(4){color:#0065FC;}
+#heb_3 i:nth-child(5){color:#F2F2F2;}
+
+#heb_4 i:nth-child(1){color:#0065FC;}
+#heb_4 i:nth-child(2){color:#0065FC;}
+#heb_4 i:nth-child(3){color:#0065FC;}
+#heb_4 i:nth-child(4){color:#F2F2F2;}
+#heb_4 i:nth-child(5){color:#F2F2F2;}
+
+#heb_5 i:nth-child(1){color:#0065FC;}
+#heb_5 i:nth-child(2){color:#0065FC;}
+#heb_5 i:nth-child(3){color:#0065FC;}
+#heb_5 i:nth-child(4){color:#0065FC;}
+#heb_5 i:nth-child(5){color:#F2F2F2;}
+
+#heb_6 i:nth-child(1){color:#0065FC;}
+#heb_6 i:nth-child(2){color:#0065FC;}
+#heb_6 i:nth-child(3){color:#0065FC;}
+#heb_6 i:nth-child(4){color:#0065FC;}
+#heb_6 i:nth-child(5){color:#0065FC;}
+
+
+/* CSS de la partie gauche "Populaire"*/
+#populaire
+{
+    background-color: #F2F2F2;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    border-radius: 16px;
+    margin-left:32px;
+    min-width:450px;
+    width: 450px;
+    padding:16px 16px 0px 16px;
+}
+#populaire header
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin:0px 16px;
+}
+
+#liste_populaire
+{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    
+}
+.article_populaire
+{
+    background-color: white;
+    border-radius: 16px;
+    border:white 5px solid;
+    min-width: 350px;
+    height: 134px;
+    margin: 0px 16px 32px 16px;
+}
+.article_populaire a
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    text-decoration: none;
+    color:black ;
+}
+.dim_p_pop
+{
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+}
+
+.img_populaire
+{
+    display:none; 
+}
+.dim_img_pop
+{
+    height: 134px;
+    border-radius: 16px 0px 0px 16px;
+    margin:0px 0px;
+    width:127px;
+}
+.dim_p_pop
+{
+    padding:0px 16px;
+}
+.dim_p_pop p
+{
+    margin:8px 0px;
+}
+
+#pop_1 div[class="dim_img_pop"]
+{
+    background: url("../img/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+}
+#pop_2 div[class="dim_img_pop"]
+{
+    background: url("../img/small/aw-creative-VGs8z60yT2c-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+}
+#pop_3 div[class="dim_img_pop"]
+{
+    background: url("../img/small/febrian-zakaria-sjvU0THccQA-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+}
+
+/* Pour les étoiles, simplification des lignes */
+#pop_1 i:nth-child(1){color:#0065FC;}
+#pop_1 i:nth-child(2){color:#0065FC;}
+#pop_1 i:nth-child(3){color:#0065FC;}
+#pop_1 i:nth-child(4){color:#0065FC;}
+#pop_1 i:nth-child(5){color:#0065FC;}
+
+#pop_2 i:nth-child(1){color:#0065FC;}
+#pop_2 i:nth-child(2){color:#0065FC;}
+#pop_2 i:nth-child(3){color:#0065FC;}
+#pop_2 i:nth-child(4){color:#0065FC;}
+#pop_2 i:nth-child(5){color:#F2F2F2;}
+
+#pop_3 i:nth-child(1){color:#0065FC;}
+#pop_3 i:nth-child(2){color:#0065FC;}
+#pop_3 i:nth-child(3){color:#0065FC;}
+#pop_3 i:nth-child(4){color:#0065FC;}
+#pop_3 i:nth-child(5){color:#F2F2F2;}
