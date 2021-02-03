@@ -15,13 +15,13 @@
     height: 38px;
     display:flex;
     flex-direction:row;
-    justify-content: center;
+    justify-content:space-between ;
     align-items: center;
     border:1px #F2F2F2 solid;
     border-radius: 10px 10px 10px 10px;
     flex-wrap:nowrap;
-    width:320px;
-    min-width: 320px;
+    width:400px;
+    min-width: 400px;
     border-right: none;
     
 }
@@ -43,7 +43,7 @@
 {
     height:38px;
     border:none;
-    width: 210px;
+    width: 70%;
 }
 #mot_recherche
 {
@@ -97,8 +97,9 @@
     flex-direction:row;
     flex-wrap:wrap;
     justify-content: flex-start;
-    align-items: center;
+    align-items:center;
     max-width: 100%;
+    
 }
 .filtres
 {
@@ -112,6 +113,8 @@
     border:#F2F2F2 2px solid;
     height:2em;
     border-left:none;
+    text-decoration: none;
+    color:black ;
     
 }
 .filtres p
@@ -120,3 +123,62 @@
     margin:0px 0px;
 }
 /* CSS de la partie milieu sur les logements */
+
+#lieu
+{
+    background-color: #F2F2F2;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    border-radius: 16px;
+    
+}
+.article_hebergement
+{
+    background-color: white;
+    border-radius: 16px;
+    border:white 4px solid;
+    margin:32px;
+    
+}
+.article_hebergement p
+{
+    margin:8px 8px;
+}
+.article_hebergement a
+{
+    text-decoration: none;
+    color:black ;
+}
+#liste_hebergement
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    
+}
+.img_hebergement
+{
+    width:250px;
+    border-radius: 16px 16px 0px 0px;
+
+
+    
+}
+.dim_img{
+    background: url("../img/small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg") repeat scroll top left;
+    background-position: center;
+    background-size: cover;
+    width:250px;
+    height: 150px;
+    border-radius: 16px 16px 0px 0px;
+    margin:0px 0px;
+}
+
+#organisation i:nth-child(1){color:#0065FC;;}
+#organisation i:nth-child(2){color:#F2F2F2;}
+#organisation i:nth-child(3){color:blue;}
+#organisation i:nth-child(4){color:blue;}
+#organisation i:nth-child(5){color:grey;}
