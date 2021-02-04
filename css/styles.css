@@ -4,38 +4,117 @@
 
 body
 {
-    font-family: 'Raleway Regular', arial;
+    
     font-weight: normal;
     font-style: normal;
+    font-size:1.1em;
     display:flex;
     flex-direction:column;
     justify-content:flex-start ;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap:nowrap;
+    margin:0px;
 }
-#entête, #Element_Haut, #hébergement, #populaire, #activité
-{
-    width: 98%;
+h1{
+    font-size:20px;
 }
-#footer
+/* Astuce trouvée sur internet pour décaler les ancres du fait du menu de navigation */
+/* Non utilisé
+section:target 
 {
-    width: 100%;
-    background-color: yellow;
+    padding-top: 2em; 
+    margin-top: -2em; 
+}
+*/
+
+#entête, #Element_Haut, #hébergement, #activité
+{
+    margin-left:50px;
+    width:1340px;
+
+}
+#entête
+{
+    padding:0px 5px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between ;
+    align-items: center;
+    background-color: white;
+   
+
+}
+
+#inscription
+{
+    color:#0065FC;
+}
+.menu_nav
+{
+    min-height:110px;
+}
+#menu_heb{
+    border-top:#0065FC solid 2px;
+    color:#0065FC;
+}
+
+
+#menu
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between ;
+    align-items: center;
+    vertical-align: middle;
+
+}
+nav
+{
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between ;
+    align-items: center;
+    text-align: center;
+
+}
+nav a
+{
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    color:black;
+    text-decoration: none;
+}
+
+#menu a
+{
+    padding: 0px 22px 0px 28px;
+    margin:0px 17px;
+
+}
+
+
+#lieu
+{
+    width:800px;
+}
+#flitres, #information
+{
+    margin-left: 5px;
 }
 
 
 /* CSS du projet de l'entête et du nav */
 #logo_img
 {
-    max-width: 33%;
-	max-height: 33%;
+	max-height: 30px;
 }
 /* CSS de la partie haute */
 
 /* fonction recherche */
 #Element_Haut form p
 {
-    height: 38px;
+    height: 48px;
     display:flex;
     flex-direction:row;
     justify-content:space-between ;
@@ -43,18 +122,35 @@ body
     border:1px #F2F2F2 solid;
     border-radius: 10px 10px 10px 10px;
     flex-wrap:nowrap;
-    width:400px;
-    min-width: 400px;
+    width:420px;
+    min-width: 420px;
     border-right: none;
     
+}
+#Element_Haut h1
+{
+    margin:0px;
+    
+
+}
+#Element_Haut
+{
+    padding:0px 5px;  
+}
+
+#Element_Haut header p
+{
+    margin-top:10px;
+    
+
 }
 #icone_géo
 {
     background-color: #F2F2F2;
     border-radius: 10px 0px 0px 10px;
     border-left:none;
-    height:40px ;
-    width:40px;
+    height:50px ;
+    width:50px;
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
@@ -64,9 +160,12 @@ body
 }
 #recherche
 {
-    height:38px;
+    height:48px;
     border:none;
-    width: 70%;
+    width: 234px;
+    font-size:16px;
+    padding: 0px 10px;
+    font-weight: bold;
 }
 #mot_recherche
 {
@@ -78,8 +177,11 @@ body
     flex-wrap:nowrap;
     justify-content: center;
     align-items: center;
-    height:40px ;
-    padding: 0px 10px;
+    height:50px ;
+    padding: 0px 5px;
+    width:134px;
+    font-weight: bold;
+
 
 }
 #icone_recherche
@@ -87,8 +189,8 @@ body
     background-color: #0065FC;
     border-radius: 10px 10px 10px 10px;
     color:white;
-    height:40px ;
-    min-width:40px;
+    height:50px ;
+    min-width:50px;
     display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
@@ -107,8 +209,8 @@ body
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    height: 36px;
-    width: 36px;
+    height: 50px;
+    width: 50px;
 }
 .fa-map-marker-alt
 {
@@ -122,29 +224,81 @@ body
     justify-content: flex-start;
     align-items:center;
     max-width: 100%;
+    margin:32px 5px;
+    font-size: 20px;
+}
+#filtres span
+{
+    text-transform: uppercase;
     
 }
+
 .filtres
 {
     display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
     justify-content: center;
-    margin:0px 10px;
+    margin:0px 12px;
     align-items:center;
     border-radius: 32px;
     border:#F2F2F2 2px solid;
-    height:2em;
+    height:46px;
     border-left:none;
     text-decoration: none;
     color:black ;
+    font-weight: bold;
+    font-size: 20px;
     
 }
 .filtres p
 {
-    padding:0px 15px 0px 10px;
+    padding:0px 22px 0px 10px;
     margin:0px 0px;
 }
+
+#mot_filtre
+{
+    margin-right:32px;
+    font-weight: bold;
+}
+
+#information i
+{
+    font-size: 10px;
+    color:#0065FC;
+    
+    
+}
+#information
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: flex-start;
+    align-items:center;
+}
+#info
+{
+    display:flex;
+    flex-direction:row;
+    flex-wrap:nowrap;
+    justify-content: center;
+    align-items:center;
+    margin-left:5px;
+    margin-right: 10px;
+    border-radius: 100%;
+    border:#F2F2F2 1px solid;
+    height:22px;
+    width:22px;
+    text-align:center;
+}
+
+#information p
+{
+    margin:0px;
+}
+
 /* CSS de la partie milieu sur les logements */
 
 #hébergement
@@ -152,6 +306,8 @@ body
     display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
+    margin:32px 50px;
+    
 }
 
 
@@ -165,40 +321,22 @@ body
     flex-wrap:nowrap;
     justify-content: flex-start;
     border-radius: 16px; 
-    padding:16px;
-    width: 878px;
-}
-#lieu header
-{
-    margin:0px 16px;
+    width:880px;
+    padding:0px 25px;
     
 }
+
 #lieu footer
 {
-    margin:16px 16px; 
+    margin:8px 16px 30px 16px; 
 }
 #lieu header
 {
     margin:0px 16px;
-    
-}
-.article_hebergement
-{
-    background-color: white;
-    border-radius: 16px;
-    border:white 5px solid;
-    margin: 0px 16px 32px 16px;
-    min-width:250px;
-    
 }
 .article_hebergement p
 {
     margin:8px 8px;
-}
-.article_hebergement a
-{
-    text-decoration: none;
-    color:black ;
 }
 #liste_hebergement
 {
@@ -208,7 +346,27 @@ body
     justify-content: flex-start;
     align-items: flex-end;
     min-width:100%;
+}
+#liste_hebergement a
+{
+    text-decoration: none;
+    color:black ;
+    background-color: white;
+    border-radius: 16px;
+    border:white 5px solid;
+    margin: 0px 15px 30px 15px;
+    min-width:236px;
+    box-shadow: 0px 5px 10px #dddcdc;
     
+    
+}
+#liste_hebergement a:hover{
+    /* L'image est grossie de 25% */
+    -webkit-transform:scale(1.1); /* Safari et Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* Internet Explorer 9 */
+    -o-transform:scale(1.1); /* Opera */
+    transform:scale(1.1);
 }
 .img_hebergement
 {
@@ -216,7 +374,6 @@ body
 }
 .dim_img_heb
 {
-    
     height: 125px;
     border-radius: 16px 16px 0px 0px;
     margin:0px 0px;
@@ -291,7 +448,7 @@ body
 #heb_6 i:nth-child(5){color:#0065FC;}
 
 
-/* CSS de la partie gauche "Populaire"*/
+/* CSS de la partie droite "Populaire"*/
 #populaire
 {
     background-color: #F2F2F2;
@@ -299,10 +456,10 @@ body
     flex-direction:column;
     flex-wrap:nowrap;
     border-radius: 16px;
-    margin-left:32px;
-    min-width:450px;
-    width: 450px;
-    padding:16px 16px 0px 16px;
+    margin-left:40px;
+    
+    min-width: 376px;
+    padding:0px 22px;
 }
 #populaire header
 {
@@ -323,21 +480,34 @@ body
 }
 .article_populaire
 {
-    background-color: white;
-    border-radius: 16px;
-    border:white 5px solid;
-    min-width: 350px;
-    height: 134px;
-    margin: 0px 16px 32px 16px;
-}
-.article_populaire a
-{
     display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
+    
+}
+#liste_populaire a
+{
+    
     text-decoration: none;
     color:black ;
+    background-color: white;
+    border-radius: 16px;
+    border:white 5px solid;
+    min-width:317px;
+    height: 134px;
+    margin: 0px 15px 32px 15px;
+    box-shadow: 0px 5px 10px #dddcdc;
+    
 }
+#liste_populaire a:hover{
+    /* L'image est grossie de 25% */
+    -webkit-transform:scale(1.1); /* Safari et Chrome */
+    -moz-transform:scale(1.1); /* Firefox */
+    -ms-transform:scale(1.1); /* Internet Explorer 9 */
+    -o-transform:scale(1.1); /* Opera */
+    transform:scale(1.1);
+}
+
 .dim_p_pop
 {
     display:flex;
@@ -355,11 +525,11 @@ body
     height: 134px;
     border-radius: 16px 0px 0px 16px;
     margin:0px 0px;
-    width:127px;
+    min-width:127px;
 }
 .dim_p_pop
 {
-    padding:0px 16px;
+    padding:0px 21px;
 }
 .dim_p_pop p
 {
@@ -400,3 +570,160 @@ body
 #pop_3 i:nth-child(3){color:#0065FC;}
 #pop_3 i:nth-child(4){color:#0065FC;}
 #pop_3 i:nth-child(5){color:#F2F2F2;}
+
+
+
+
+
+
+
+
+
+/* CSS de la partie activités */
+#activité section
+{
+    margin-bottom:60px;
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between ;
+
+}
+.activité_col
+{
+    height:445px;
+    width:302px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:nowrap;
+    justify-content:space-between ;
+    
+
+}
+.activité_col a
+{
+    
+    text-decoration: none;
+    color:black ;
+}
+.activité_col a:hover{
+    /* L'image est grossie de 25% */
+    -webkit-transform:scale(1.05); /* Safari et Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* Internet Explorer 9 */
+    -o-transform:scale(1.05); /* Opera */
+    transform:scale(1.05);
+}
+.activité_col article
+{
+    box-shadow: 0px 5px 10px #F2F2F2;
+    border-radius: 16px ;
+
+}
+.dim_p_act p
+{
+    height:55px;
+    margin:0px 0px 0px 20px;
+    font-size: 17px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center ;
+    
+
+}
+
+.img_activités{
+    display:none;
+}
+.dim_img_act
+{
+    
+    border-radius: 16px 16px 0px 0px;
+    margin:0px 0px;
+    
+}
+
+#act_1 div[class="dim_img_act"]
+{
+    background: url("../img/activite/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+    height: 390px;
+}
+#act_2 div[class="dim_img_act"]
+{
+    background: url("../img/activite/paul-hermann-QFTrLdQIRhI-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+    height: 182px;
+}
+#act_3 div[class="dim_img_act"]
+{
+    background: url("../img/activite/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+    height: 109px;
+}
+#act_4 div[class="dim_img_act"]
+{
+    background: url("../img/activite/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+    height: 390px;
+}
+#act_5 div[class="dim_img_act"]
+{
+    background: url("../img/activite/florian-wehde-xW9e8gdotxI-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+    height: 140px;
+}
+#act_6 div[class="dim_img_act"]
+{
+    background: url("../img/activite/lena-paulin-wH2-EJoDcV0-unsplash.jpg") no-repeat scroll center;
+    background-size: cover;
+    height: 154px;
+}
+#act_1, #act_4 
+{
+    height:445px;
+    width:302px;
+}
+#act_2 
+{
+    height:237px;
+    width:302px;
+}
+#act_3 
+{
+    height:164px;
+    width:302px;
+}
+#act_5 
+{
+    height:195px;
+    width:302px;
+}
+#act_6
+{
+    height:209px;
+    width:302px;
+}
+.dim_p_act span
+{
+    text-transform: uppercase;
+    
+}
+
+
+
+/* CSS du bas de page */
+
+#footer
+{
+    width: 1440px;
+    background-color: #F2F2F2;
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start ;
+}
+#footer article
+{
+    width: 33%;
+    margin:32px;
+    
+}

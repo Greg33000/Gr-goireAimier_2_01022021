@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <link rel="stylesheet" href="css/styles.css" />
         <title>Réservia</title>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
 
         <!--commentaires-->
     </head>
@@ -15,16 +15,16 @@
             <div id="logo">
                 <img id="logo_img" src="img/Reservia@3x.png" alt="Photo_logo" />
             </div>
-            <nav>
-                <article> 
-                    Hébergements
-                </article>
-                <article> 
-                    Activités
-                </article>
-            </nav>
-            <div>
-                <a>S'inscrire</a>
+            <div id="menu">
+                <nav>
+                    <a href="#lieu" class="menu_nav" id="menu_heb"> 
+                        Hébergements
+                    </a>
+                    <a href="#activité" class="menu_nav" id="menu_act"> 
+                        Activités
+                    </a>
+                </nav>
+                <a id="inscription"><strong>S'inscrire</strong></a>
             </div>
         </header>
         <section id="Element_Haut">
@@ -35,42 +35,42 @@
             <form method="post" action="test.php">
                 <p>
                     <i id="icone_géo" class="fas fa-map-marker-alt"></i>
-                    <input type="search" name="recherche" id="recherche" />
+                    <input type="search" name="recherche" id="recherche" value="Marseille, France" />
                     <!--  <label for="recherche">Rechercher</label>  => Non nécessaire : mettre l'icone rechercher avec le mot et chaoisir en fonction de la taille écran -->
                     <span id="mot_recherche">Rechercher</span>
                     <span id="icone_recherche" class="fas fa-search"></span>
                 </p>
             </form>
             <div id="filtres">
-                <p>Filtres</p>
+                <p id="mot_filtre">Filtres</p>
                 <a class="filtres" href="">
                     <div class="icones_filtres">
                         <i class="fas fa-money-bill-wave"></i>
                     </div>
-                    <p>Economique</p>
+                    <p><span>é</span>conomique</p>
                 </a>
                 <a class="filtres" href="">
                     <div class="icones_filtres">
                         <i class="fas fa-child"></i>
                     </div>
-                    <p>Familial</p>
+                    <p><span>f</span>amilial</p>
                 </a>
                 <a class="filtres" href="">
                     <div class="icones_filtres">
                         <i class="fas fa-heart"></i>
                     </div>
-                    <p>Romantique</p>
+                    <p><span>r</span>omantique</p>
                 </a>
                 <a class="filtres" href="">
                     <div class="icones_filtres">
-                        <i class="fas fa-paw"></i>
+                        <i class="fas fa-dog"></i>
                     </div>
-                    <p>Animaux autorisés</p>
+                    <p><span>a</span>nimaux autorisés</p>
                 </a>               
             </div>
             <footer id="information">
-                <si class="fas fa-info"></i>
-                Plus de 500 logements sont disponibles dans cette ville
+                <div id="info"><i class="fas fa-info"></i></div>
+                <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </footer>
         </section>
         <section id = "hébergement">
@@ -79,8 +79,8 @@
                     <h1>Hébergements à Marseille</h1>
                 </header>
                 <div id="liste_hebergement">
-                    <article id="heb_1" class="article_hebergement"> 
-                        <a href="">
+                    <a href="">
+                        <article id="heb_1" class="article_hebergement"> 
                             <div class="dim_img_heb">
                                 <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
                                 <img class="img_hebergement" src="img/small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Photo"/>
@@ -90,10 +90,10 @@
                             <p>
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </p>
-                        </a>
-                    </article>
-                    <article id="heb_2" class="article_hebergement"> 
-                        <a href="">
+                        </article>
+                    </a>
+                    <a href="">
+                        <article id="heb_2" class="article_hebergement"> 
                             <div class="dim_img_heb">
                                 <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
                                 <img class="img_hebergement" src="img/small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Photo"/>
@@ -103,10 +103,10 @@
                             <p>
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </p>
-                        </a>
-                    </article>
-                    <article id="heb_3" class="article_hebergement"> 
-                        <a href="">
+                        </article>
+                    </a>
+                    <a href="">
+                        <article id="heb_3" class="article_hebergement"> 
                             <div class="dim_img_heb">
                                 <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
                                 <img class="img_hebergement" src="img/small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Photo"/>
@@ -116,10 +116,10 @@
                             <p>
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </p>
-                        </a>
-                    </article>
-                    <article id="heb_4" class="article_hebergement"> 
-                        <a href="">
+                        </article>
+                    </a>
+                    <a href="">
+                        <article id="heb_4" class="article_hebergement"> 
                             <div class="dim_img_heb">
                                 <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
                                 <img class="img_hebergement" src="img/small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Photo"/>
@@ -129,10 +129,10 @@
                             <p>
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </p>
-                        </a>
-                    </article>
-                    <article id="heb_5" class="article_hebergement"> 
-                        <a href="">
+                        </article>
+                    </a>
+                    <a href="">
+                        <article id="heb_5" class="article_hebergement"> 
                             <div class="dim_img_heb">
                                 <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
                                 <img class="img_hebergement" src="img/small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Photo"/>
@@ -142,10 +142,10 @@
                             <p>
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </p>
-                        </a>
-                    </article>
-                    <article id="heb_6" class="article_hebergement"> 
-                        <a href="">
+                        </article>
+                    </a>
+                    <a href="">
+                        <article id="heb_6" class="article_hebergement"> 
                             <div class="dim_img_heb">
                                 <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
                                 <img class="img_hebergement" src="img/small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Photo"/>
@@ -155,8 +155,8 @@
                             <p>
                                 <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                             </p>
-                        </a>
-                    </article>
+                        </article>
+                    </a>
                 </div>
                 <footer>
                     <strong>Afficher plus</strong>
@@ -168,8 +168,9 @@
                     <i class="fas fa-chart-line"></i>
                 </header>
                 <div id="liste_populaire">
-                    <article id="pop_1" class="article_populaire">
-                        <a href="">
+                    <a href="">
+                        <article id="pop_1" class="article_populaire">
+                        
                             <div class="dim_img_pop">
                                 <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
                                 <img class="img_populaire" src="img/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Photo"/>
@@ -183,10 +184,10 @@
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                                 </p>
                             </div>
-                        </a>
-                    </article>
-                    <article id="pop_2" class="article_populaire">
-                        <a href="">
+                        </article>
+                    </a>
+                    <a href="">
+                        <article id="pop_2" class="article_populaire">
                             <div class="dim_img_pop">
                                 <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
                                 <img class="img_populaire" src="img/small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Photo"/>
@@ -200,10 +201,10 @@
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                                 </p>
                             </div>
-                        </a>
-                    </article>
-                    <article id="pop_3" class="article_populaire">
-                        <a href="">
+                        </article>
+                    </a>
+                    <a href="">
+                        <article id="pop_3" class="article_populaire">                        
                             <div class="dim_img_pop">
                                 <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
                                 <img class="img_populaire" src="img/small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Photo"/>
@@ -217,8 +218,8 @@
                                     <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
                                 </p>
                             </div>
-                        </a>
-                    </article>
+                        </article>
+                    </a>                    
                 </div>
             </section>
         </section>
@@ -227,24 +228,80 @@
                 <h1>Activités à Marseille</h1>
             </header>
             <section>
-                <article class="article_activité">
-                    <!-- Insérer les photos et les données des articles -->
-                </article>
-                <article class="article_activité">
-                    <!-- Insérer les photos et les données des articles -->
-                </article>
-                <article class="article_activité">
-                    <!-- Insérer les photos et les données des articles -->
-                </article>
-                <article class="article_activité">
-                    <!-- Insérer les photos et les données des articles -->
-                </article>
-                <article class="article_activité">
-                    <!-- Insérer les photos et les données des articles -->
-                </article>
-                <article class="article_activité">
-                    <!-- Insérer les photos et les données des articles -->
-                </article>
+                <div class="activité_col">
+                    <a href="">
+                        <article id="act_1" >
+                            <div class="dim_img_act">
+                                <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
+                                <img class="img_activités" src="img/activite/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Photo"/>
+                            </div>
+                            <div class="dim_p_act">
+                                <p><strong>Vieux Port</strong></p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <div class="activité_col">
+                    <a href="">
+                        <article id="act_2" >
+                            <div class="dim_img_act">
+                                <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
+                                <img class="img_activités" src="img/activite/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Photo"/>
+                            </div>
+                            <div class="dim_p_act">
+                                <p><strong>Fort de Pomègues</strong></p>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="">
+                        <article id="act_3" >
+                            <div class="dim_img_act">
+                                <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
+                                <img class="img_activités" src="img/activite/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Photo"/>
+                            </div>
+                            <div class="dim_p_act">
+                                <p><strong><span>î</span>le de Frioul</strong></p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <div class="activité_col">
+                    <a href="">
+                        <article id="act_4" >
+                            <div class="dim_img_act">
+                                <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
+                                <img class="img_activités" src="img/activite/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Photo"/>
+                            </div>
+                            <div class="dim_p_act">
+                                <p><strong>Parc National des Calanques</strong></p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
+                <div class="activité_col">
+                    <a href="">
+                        <article id="act_5" >
+                            <div class="dim_img_act">
+                                <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
+                                <img class="img_activités" src="img/activite/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Photo"/>
+                            </div>
+                            <div class="dim_p_act">
+                                <p><strong>Notre-Dame-de-la-Garde</strong></p>
+                            </div>
+                        </article>
+                    </a>
+                    <a href="">
+                        <article id="act_6" >
+                            <div class="dim_img_act">
+                                <!-- La photo sera en arrière plan mais c'est pour qu'elle soit référencée CEO? -->
+                                <img class="img_activités" src="img/activite/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Photo"/>
+                            </div>
+                            <div class="dim_p_act">
+                                <p><strong>Parc Longchamp</strong></p>
+                            </div>
+                        </article>
+                    </a>
+                </div>
             </section>
         </section>
 
