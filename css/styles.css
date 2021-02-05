@@ -96,6 +96,10 @@ nav a
     color:black;
     text-decoration: none;
 }
+#nav_2
+{
+    display:none;
+}
 #menu a
 {
     padding: 0px 22px 0px 28px;
@@ -545,7 +549,7 @@ nav a
     height: 134px;
     border-radius: 16px 0px 0px 16px;
     margin:0px 0px;
-    min-width:127px;
+    width:127px;
 }
 .dim_p_pop
 {
@@ -719,6 +723,7 @@ nav a
     display:flex;
     flex-direction:row;
     justify-content:flex-start ;
+    
 }
 #footer article
 {
@@ -732,4 +737,376 @@ nav a
 #footer p
 {   
     font-size:14px; 
+}
+@media all and (max-width: 1024px)
+{
+    /* Vos règles CSS pour les tablettes ici */
+    #logo,#Element_Haut header,#Element_Haut form,#filtres,#information
+    {
+        margin-left: 20px;
+    }
+    #hébergement
+    {
+        display:flex;
+        flex-direction:column-reverse;
+        flex-wrap:wrap;
+        margin:32px 50px;    
+    }
+
+    #entête, #Element_Haut, #hébergement, #activité
+    {
+        margin-left:0px;
+        margin-right:0px;
+        padding-left:0px;
+        padding-right: 0px;
+        width:100%;
+    }
+    
+    #populaire
+    {
+        
+        border-radius: 0px;
+        margin-left:0px;
+        width: 100%;
+        padding:0px 0px;
+        margin-bottom:30px;
+    }
+    
+
+
+    #populaire header
+    {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        justify-content: space-between;
+        align-items: center;
+        margin:5px 3% 5px 3%;
+    }
+    #liste_populaire
+    {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;   
+        justify-content: space-around;
+    }
+    #liste_populaire a
+    {    
+        width:44%;
+        min-width:100px;
+        height: 135px;
+        margin:0px 0px 32px 0px;
+    }
+
+    .dim_img_pop
+    {
+        height: 135px;
+        min-width:100px;
+        width:40%;
+        
+    }
+    .dim_p_pop
+    {
+        height: 135px;
+        width:60%;
+        padding: 0px 5%;
+    }
+    #lieu
+    {
+        width:100%;
+        background-color:white;
+        
+        
+        padding:0px;
+    }
+    #lieu header
+    {
+        width:80%;
+        margin-left:3%;
+    }
+    #lieu footer
+    {
+        width:80%;
+        margin-left:3%;
+        margin-top:20px;
+    }
+    #liste_hebergement
+    {
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:space-around ;
+        align-items: space-around;
+    }
+    #liste_hebergement a
+    {
+        width:28.5%;
+        min-width:127px;
+        margin: 15px 0px 15px 0px;
+    }
+
+
+    #activité_main
+    {
+        display:flex;
+        flex-direction:row;
+        flex-wrap:wrap;
+        justify-content:center ;
+        align-items: space-between;
+    }
+    .activité_col
+    {
+        height:auto;
+        min-width:300px;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:space-between ;
+        align-items: space-between;
+        margin:10px 20px 20px 10px ;
+        width:45%;
+        
+    }
+    .activité a
+    {
+        margin: 0px 30px;
+    }    
+    #act_2 div[class="dim_img_act"],#act_3 div[class="dim_img_act"],#act_5 div[class="dim_img_act"],#act_6 div[class="dim_img_act"]
+    {
+        height: 134px;
+    }
+    #act_2, #act_3, #act_5, #act_6
+    {
+        height:190px;
+        min-width:300px;
+        width:100%;
+    }
+    #act_1 div[class="dim_img_act"],#act_4 div[class="dim_img_act"]
+    {
+        height: 354px;
+    }
+    #act_1, #act_4
+    {
+        height:410px;
+        min-width:300px;
+        width:100%;
+        
+    }
+    #activité header
+    {
+        width:80%;
+        margin-left:3%;
+    }
+    #footer
+    {
+        width: 100%;
+        display:flex;
+        flex-direction:row;
+        justify-content:space-around ;
+        padding:32px 0% 32px 0%;
+        
+    }
+    #footer article
+    {
+        margin:0px;
+        min-width:200px;
+    }
+  
+}
+
+/*@media all and (max-device-width: 480px)*/
+@media all and (max-width: 700px)
+{
+    /* Vos règles CSS pour les mobiles ici */
+    #liste_hebergement a
+    {
+        width:45%;
+        min-width:127px;
+        margin: 15px 0px 15px 0px;
+        
+    }
+    
+    #liste_populaire
+    {
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;   
+        justify-content: space-around;
+        align-items:center;
+    }
+    #liste_populaire a
+    {    
+        width:90%;
+        min-width:325px;
+        height: 135px;
+        margin:0px 0px 32px 0px;
+    }
+
+    .dim_img_pop
+    {
+        height: 135px;
+        min-width:100px;
+        width:40%;
+        
+    }
+    .dim_p_pop
+    {
+        height: 135px;
+        width:60%;
+        padding: 0px 1% 0px 5%;
+    }
+    .activité_col
+    {
+        height:auto;
+        min-width:335px;
+        display:flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        justify-content:flex-start ;
+        align-items: space-between;
+        margin:0px ;
+        width:90%;
+        
+    }
+    .activité_col a
+    {
+        margin:12px 0px ;
+        
+    }
+      
+    #act_2 div[class="dim_img_act"],#act_3 div[class="dim_img_act"],#act_5 div[class="dim_img_act"],#act_6 div[class="dim_img_act"],#act_1 div[class="dim_img_act"],#act_4 div[class="dim_img_act"]
+    {
+        height: 134px;
+    }
+    #act_2, #act_3, #act_5, #act_6,#act_1, #act_4
+    {
+        height:190px;
+        min-width:335px;
+        width:100%;
+        
+    }
+
+    #footer
+    {
+        display:flex;
+        flex-direction:column;
+        flex-wrap: wrap;
+        justify-content:flex-start ;
+        align-items: flex-start;
+        
+    }
+    #footer article
+    {
+        margin-left:5.5%;
+        min-width:250px;
+    }
+    #populaire header
+    {
+        
+        margin-left:5.5%;
+    }
+    #activité header
+    {
+        margin-left:5.5%;
+    }
+    #lieu header
+    {
+        margin-left:5.5%;
+    }
+    #lieu footer
+    {
+        margin-left:5.5%;
+    }
+    
+    #nav_1
+    {
+        display:none;
+    }
+    #nav_2
+    {
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:center ;
+        align-items: center;
+        width:100%;
+        text-align: center;
+        
+        
+    }
+    .menu_nav{
+        width:50%;
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:center ;
+        align-items: center;
+        text-align: center;
+    }
+     
+}
+@media all and (max-width: 480px)
+{
+    /* Vos règles CSS pour les mobiles ici */
+    #liste_hebergement a
+    {
+        width:90%;
+        min-width:127px;
+        margin: 15px 0px 15px 0px;
+        
+    }
+    #mot_filtre{
+        width:80%;
+        margin-top:0px;
+    }
+    .filtres{
+        margin: 0px 0px 15px 0px;
+    }
+    .filtres p
+    {
+        padding-right: 10px;
+    }
+    #filtres{
+        display:flex;
+        flex-direction:row;
+        flex-wrap: wrap;
+        justify-content:space-between ;
+        align-items: flex-start;
+        margin-right: 20px;
+    }
+    #mot_recherche
+    {
+        display:none;
+    }
+    #icone_recherche
+    {
+        background-color: #0065FC;
+        border-radius: 16px 16px 16px 16px;
+        color:white;
+        height:50px ;
+        min-width:50px;
+        display:flex;
+        flex-direction:row;
+        flex-wrap:nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #recherche
+    {
+
+        width: 230px;
+
+    }
+    #Element_Haut form p
+    {
+        
+        width:330px;
+        min-width: 330px;
+        border-right: none;    
+    }
+    #populaire
+    {
+        min-width: 0px;
+    }
+    
+
 }
