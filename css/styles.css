@@ -1,13 +1,23 @@
 /* CSS du projet 2 : Réservia */
 
-@import url(https://fr.allfont.net/allfont.css?fonts=raleway-regular);
+@font-face 
+{
+	font-family: "Raleway";
+	src: url('../fonts/Raleway-Regular.ttf');
+}
+
+@font-face 
+{
+	font-family: "Raleway";
+	font-weight: bold;
+	src: url('../fonts/Raleway-Bold.ttf');
+}
 
 body
 {
-    
+    font-family: "Raleway", Helvetica, Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
-    font-size:1.1em;
     display:flex;
     flex-direction:column;
     justify-content:flex-start ;
@@ -15,9 +25,17 @@ body
     flex-wrap:nowrap;
     margin:0px;
 }
-h1{
-    font-size:20px;
+.titre_section
+{
+    font-size: 22px;
 }
+
+.titre_article
+{
+    font-size: 20px;
+    font-weight:bold;
+}
+
 /* Astuce trouvée sur internet pour décaler les ancres du fait du menu de navigation */
 /* Non utilisé
 section:target 
@@ -31,7 +49,6 @@ section:target
 {
     margin-left:50px;
     width:1340px;
-
 }
 #entête
 {
@@ -40,11 +57,8 @@ section:target
     flex-direction:row;
     justify-content:space-between ;
     align-items: center;
-    background-color: white;
-   
-
+    background-color: white;   
 }
-
 #inscription
 {
     color:#0065FC;
@@ -53,12 +67,11 @@ section:target
 {
     min-height:110px;
 }
-#menu_heb{
+#menu_heb
+{
     border-top:#0065FC solid 2px;
     color:#0065FC;
 }
-
-
 #menu
 {
     display:flex;
@@ -66,7 +79,6 @@ section:target
     justify-content:space-between ;
     align-items: center;
     vertical-align: middle;
-
 }
 nav
 {
@@ -75,7 +87,6 @@ nav
     justify-content:space-between ;
     align-items: center;
     text-align: center;
-
 }
 nav a
 {
@@ -85,29 +96,21 @@ nav a
     color:black;
     text-decoration: none;
 }
-
 #menu a
 {
     padding: 0px 22px 0px 28px;
     margin:0px 17px;
-
 }
 
-
-#lieu
-{
-    width:800px;
-}
 #flitres, #information
 {
     margin-left: 5px;
 }
 
-
 /* CSS du projet de l'entête et du nav */
 #logo_img
 {
-	max-height: 30px;
+	max-height: 50px;
 }
 /* CSS de la partie haute */
 
@@ -120,34 +123,28 @@ nav a
     justify-content:space-between ;
     align-items: center;
     border:1px #F2F2F2 solid;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 16px ;
     flex-wrap:nowrap;
     width:420px;
     min-width: 420px;
-    border-right: none;
-    
+    border-right: none;    
 }
 #Element_Haut h1
 {
     margin:0px;
-    
-
 }
 #Element_Haut
 {
     padding:0px 5px;  
 }
-
 #Element_Haut header p
 {
-    margin-top:10px;
-    
-
+    margin-top:10px;    
 }
 #icone_géo
 {
     background-color: #F2F2F2;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 16px 0px 0px 16px;
     border-left:none;
     height:50px ;
     width:50px;
@@ -155,8 +152,7 @@ nav a
     flex-direction:row;
     flex-wrap:wrap;
     justify-content: center;
-    align-items: center;
-    
+    align-items: center;    
 }
 #recherche
 {
@@ -170,7 +166,7 @@ nav a
 #mot_recherche
 {
     background-color: #0065FC;
-    border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 16px 16px 0px;
     color:white;
     display:flex;
     flex-direction:row;
@@ -181,13 +177,11 @@ nav a
     padding: 0px 5px;
     width:134px;
     font-weight: bold;
-
-
 }
 #icone_recherche
 {
     background-color: #0065FC;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 16px 16px 16px 16px;
     color:white;
     height:50px ;
     min-width:50px;
@@ -225,14 +219,12 @@ nav a
     align-items:center;
     max-width: 100%;
     margin:32px 5px;
-    font-size: 20px;
+    font-size: 1.1em;
 }
 #filtres span
 {
-    text-transform: uppercase;
-    
+    text-transform: uppercase;    
 }
-
 .filtres
 {
     display:flex;
@@ -247,28 +239,32 @@ nav a
     border-left:none;
     text-decoration: none;
     color:black ;
-    font-weight: bold;
-    font-size: 20px;
-    
+    font-weight: bold; 
+}
+
+#filtres a:hover
+{
+    /* L'image est grossie de 10% */
+    /*-webkit-transform:scale(1.1); /* Safari et Chrome */
+    /*-moz-transform:scale(1.1); /* Firefox */
+    /*-ms-transform:scale(1.1); /* Internet Explorer 9 */
+    /*-o-transform:scale(1.1); /* Opera */
+    transform:scale(1.1);
 }
 .filtres p
 {
     padding:0px 22px 0px 10px;
     margin:0px 0px;
 }
-
 #mot_filtre
 {
     margin-right:32px;
     font-weight: bold;
 }
-
 #information i
 {
     font-size: 10px;
-    color:#0065FC;
-    
-    
+    color:#0065FC;       
 }
 #information
 {
@@ -293,7 +289,6 @@ nav a
     width:22px;
     text-align:center;
 }
-
 #information p
 {
     margin:0px;
@@ -306,15 +301,33 @@ nav a
     display:flex;
     flex-direction:row;
     flex-wrap:nowrap;
-    margin:32px 50px;
-    
+    margin:32px 50px;    
+}
+.titre_article
+{
+    font-size: 16px;  
+}
+#hébergement p
+{
+    font-size: 0.8em;
+    margin-top:6px;
+    margin-bottom:8px;    
+}
+#hébergement h3
+{   
+    margin-bottom: 6px;
+    margin-top:10px;   
 }
 
-
+#hébergement h1
+{
+    display:none
+}
 /* CSS de la partie gauche "Hébergements"*/
 
 #lieu
 {
+    width:800px;
     background-color: #F2F2F2;
     display:flex;
     flex-direction:column;
@@ -322,19 +335,27 @@ nav a
     justify-content: flex-start;
     border-radius: 16px; 
     width:880px;
-    padding:0px 25px;
-    
+    padding:0px 25px;   
 }
-
+#lieu header
+{
+    margin-top:45px;
+    margin-bottom: 25px;    
+}
 #lieu footer
 {
     margin:8px 16px 30px 16px; 
 }
 #lieu header
 {
-    margin:0px 16px;
+    margin:15px 16px 5px 16px;
 }
-.article_hebergement p
+#liste_hebergement h3
+{   
+    margin-left:8px;
+    margin-right:8px;
+}
+.article_hebergement p,.article_hebergement h2
 {
     margin:8px 8px;
 }
@@ -353,19 +374,20 @@ nav a
     color:black ;
     background-color: white;
     border-radius: 16px;
-    border:white 5px solid;
+    /*border:white 5px solid;*/
     margin: 0px 15px 30px 15px;
     min-width:236px;
     box-shadow: 0px 5px 10px #dddcdc;
-    
-    
+    height:190px;
+    padding:5px;
 }
-#liste_hebergement a:hover{
-    /* L'image est grossie de 25% */
-    -webkit-transform:scale(1.1); /* Safari et Chrome */
-    -moz-transform:scale(1.1); /* Firefox */
-    -ms-transform:scale(1.1); /* Internet Explorer 9 */
-    -o-transform:scale(1.1); /* Opera */
+#liste_hebergement a:hover
+{
+    /* L'image est grossie de 10% */
+    /*-webkit-transform:scale(1.1); /* Safari et Chrome */
+    /*-moz-transform:scale(1.1); /* Firefox */
+    /*-ms-transform:scale(1.1); /* Internet Explorer 9 */
+    /*-o-transform:scale(1.1); /* Opera */
     transform:scale(1.1);
 }
 .img_hebergement
@@ -374,7 +396,7 @@ nav a
 }
 .dim_img_heb
 {
-    height: 125px;
+    height: 114px;
     border-radius: 16px 16px 0px 0px;
     margin:0px 0px;
 }
@@ -457,7 +479,6 @@ nav a
     flex-wrap:nowrap;
     border-radius: 16px;
     margin-left:40px;
-    
     min-width: 376px;
     padding:0px 22px;
 }
@@ -468,46 +489,46 @@ nav a
     flex-wrap:nowrap;
     justify-content: space-between;
     align-items: center;
-    margin:0px 16px;
+    margin:15px 16px 5px 16px;
 }
-
+#populaire header i
+{
+    font-size:125%;
+}
 #liste_populaire
 {
     display:flex;
     flex-direction:column;
-    flex-wrap:nowrap;
-    
+    flex-wrap:nowrap;   
 }
 .article_populaire
 {
     display:flex;
     flex-direction:row;
-    flex-wrap:nowrap;
-    
+    flex-wrap:nowrap;    
 }
 #liste_populaire a
-{
-    
+{    
     text-decoration: none;
     color:black ;
     background-color: white;
     border-radius: 16px;
-    border:white 5px solid;
+    /* border:white 5px solid;*/
     min-width:317px;
     height: 134px;
     margin: 0px 15px 32px 15px;
-    box-shadow: 0px 5px 10px #dddcdc;
-    
+    box-shadow: 0px 5px 10px #dddcdc;  
+    padding:5px;  
 }
-#liste_populaire a:hover{
-    /* L'image est grossie de 25% */
-    -webkit-transform:scale(1.1); /* Safari et Chrome */
-    -moz-transform:scale(1.1); /* Firefox */
-    -ms-transform:scale(1.1); /* Internet Explorer 9 */
-    -o-transform:scale(1.1); /* Opera */
+#liste_populaire a:hover
+{
+    /* L'image est grossie de 10% */
+    /*-webkit-transform:scale(1.1); /* Safari et Chrome */
+    /*-moz-transform:scale(1.1); /* Firefox */
+    /*-ms-transform:scale(1.1); /* Internet Explorer 9 */
+    /*-o-transform:scale(1.1); /* Opera */
     transform:scale(1.1);
 }
-
 .dim_p_pop
 {
     display:flex;
@@ -515,7 +536,6 @@ nav a
     flex-wrap:nowrap;
     justify-content: space-between;
 }
-
 .img_populaire
 {
     display:none; 
@@ -535,7 +555,6 @@ nav a
 {
     margin:8px 0px;
 }
-
 #pop_1 div[class="dim_img_pop"]
 {
     background: url("../img/small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg") no-repeat scroll center;
@@ -571,22 +590,13 @@ nav a
 #pop_3 i:nth-child(4){color:#0065FC;}
 #pop_3 i:nth-child(5){color:#F2F2F2;}
 
-
-
-
-
-
-
-
-
 /* CSS de la partie activités */
-#activité section
+#activité_main
 {
     margin-bottom:60px;
     display:flex;
     flex-direction:row;
     justify-content:space-between ;
-
 }
 .activité_col
 {
@@ -596,52 +606,44 @@ nav a
     flex-direction:column;
     flex-wrap:nowrap;
     justify-content:space-between ;
-    
-
 }
 .activité_col a
-{
-    
+{    
     text-decoration: none;
     color:black ;
 }
-.activité_col a:hover{
-    /* L'image est grossie de 25% */
-    -webkit-transform:scale(1.05); /* Safari et Chrome */
-    -moz-transform:scale(1.05); /* Firefox */
-    -ms-transform:scale(1.05); /* Internet Explorer 9 */
-    -o-transform:scale(1.05); /* Opera */
+.activité_col a:hover
+{
+    /* L'image est grossie de 5% */
+    /*-webkit-transform:scale(1.05); /* Safari et Chrome */
+    /*-moz-transform:scale(1.05); /* Firefox */
+    /*-ms-transform:scale(1.05); /* Internet Explorer 9 */
+    /*-o-transform:scale(1.05); /* Opera */
     transform:scale(1.05);
 }
 .activité_col article
 {
     box-shadow: 0px 5px 10px #F2F2F2;
     border-radius: 16px ;
-
 }
-.dim_p_act p
+.dim_p_act h2
 {
     height:55px;
     margin:0px 0px 0px 20px;
-    font-size: 17px;
     display:flex;
-    flex-direction:column;
-    justify-content:center ;
-    
-
+    flex-direction:row;
+    justify-content:flex-start ;
+    align-items: center;
 }
-
-.img_activités{
+.img_activités
+{
     display:none;
 }
 .dim_img_act
-{
-    
+{  
     border-radius: 16px 16px 0px 0px;
     margin:0px 0px;
-    
 }
-
 #act_1 div[class="dim_img_act"]
 {
     background: url("../img/activite/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg") no-repeat scroll center;
@@ -706,10 +708,7 @@ nav a
 .dim_p_act span
 {
     text-transform: uppercase;
-    
 }
-
-
 
 /* CSS du bas de page */
 
@@ -723,7 +722,14 @@ nav a
 }
 #footer article
 {
-    width: 33%;
-    margin:32px;
-    
+    width: 24%;
+    margin:32px 50px;
+}
+#footer h2
+{   
+    font-size:20px; 
+}
+#footer p
+{   
+    font-size:14px; 
 }
