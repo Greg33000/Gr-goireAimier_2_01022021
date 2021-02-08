@@ -835,7 +835,7 @@ nav a
         flex-direction:row;
         flex-wrap:wrap;
         justify-content:space-around ;
-        align-items: space-around;
+        
     }
     #liste_hebergement a
     {
@@ -851,7 +851,6 @@ nav a
         flex-direction:row;
         flex-wrap:wrap;
         justify-content:center ;
-        align-items: space-between;
     }
     .activité_col
     {
@@ -861,7 +860,6 @@ nav a
         flex-direction:column;
         flex-wrap:wrap;
         justify-content:space-between ;
-        align-items: space-between;
         margin:10px 20px 20px 10px ;
         width:45%;
         
@@ -962,7 +960,6 @@ nav a
         flex-direction:column;
         flex-wrap:wrap;
         justify-content:flex-start ;
-        align-items: space-between;
         margin:0px ;
         width:90%;
         
@@ -1041,6 +1038,24 @@ nav a
         justify-content:center ;
         align-items: center;
         text-align: center;
+        min-height:50px;
+        margin-top:10px;
+        margin-bottom:30px;
+    }
+
+    #menu_heb2
+    {
+        border-bottom:#0065FC solid 3px;
+        color:#0065FC;
+    }
+    #menu_act2
+    {
+        border-bottom:#F2F2F2 solid 3px;
+    }
+    #inscription
+    {
+        padding:0px;
+        margin:0px;
     }
      
 }
@@ -1051,8 +1066,7 @@ nav a
     {
         width:90%;
         min-width:127px;
-        margin: 15px 0px 15px 0px;
-        
+        margin-top:0px;
     }
     #mot_filtre{
         width:80%;
@@ -1106,7 +1120,23 @@ nav a
     #populaire
     {
         min-width: 0px;
+        padding-bottom: 25px;
+        padding-top:15px;
+        margin-bottom: 0px;
+    }
+    #liste_populaire a
+    {
+        margin-bottom: 10px;
+    }
+    .dim_img_pop
+    {
+        min-width:127px;
+    }
+    #activité_main{
+        margin-bottom:38px;
+    }
+    #footer article{
+        margin-bottom:15px;
     }
     
-
 }
