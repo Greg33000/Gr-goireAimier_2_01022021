@@ -72,6 +72,7 @@ section:target
     border-top:#0065FC solid 2px;
     color:#0065FC;
 }
+
 #menu
 {
     display:flex;
@@ -80,8 +81,10 @@ section:target
     align-items: center;
     vertical-align: middle;
 }
-nav
+ul
 {
+    list-style: none;
+    margin:0px;
     display:flex;
     flex-direction:row;
     justify-content:space-between ;
@@ -96,7 +99,7 @@ nav a
     color:black;
     text-decoration: none;
 }
-#nav_2
+#nav_2 ul
 {
     display:none;
 }
@@ -132,6 +135,10 @@ nav a
     width:420px;
     min-width: 420px;
     border-right: none;    
+}
+#Element_Haut form a
+{
+text-decoration: none;
 }
 #Element_Haut h1
 {
@@ -249,10 +256,7 @@ nav a
 #filtres a:hover
 {
     /* L'image est grossie de 10% */
-    /*-webkit-transform:scale(1.1); /* Safari et Chrome */
-    /*-moz-transform:scale(1.1); /* Firefox */
-    /*-ms-transform:scale(1.1); /* Internet Explorer 9 */
-    /*-o-transform:scale(1.1); /* Opera */
+    
     transform:scale(1.1);
 }
 .filtres p
@@ -350,6 +354,11 @@ nav a
 {
     margin:8px 16px 30px 16px; 
 }
+#lieu footer a
+{    
+    text-decoration: none;
+    color:black ;
+}
 #lieu header
 {
     margin:15px 16px 5px 16px;
@@ -388,10 +397,7 @@ nav a
 #liste_hebergement a:hover
 {
     /* L'image est grossie de 10% */
-    /*-webkit-transform:scale(1.1); /* Safari et Chrome */
-    /*-moz-transform:scale(1.1); /* Firefox */
-    /*-ms-transform:scale(1.1); /* Internet Explorer 9 */
-    /*-o-transform:scale(1.1); /* Opera */
+   
     transform:scale(1.1);
 }
 .img_hebergement
@@ -527,10 +533,7 @@ nav a
 #liste_populaire a:hover
 {
     /* L'image est grossie de 10% */
-    /*-webkit-transform:scale(1.1); /* Safari et Chrome */
-    /*-moz-transform:scale(1.1); /* Firefox */
-    /*-ms-transform:scale(1.1); /* Internet Explorer 9 */
-    /*-o-transform:scale(1.1); /* Opera */
+    
     transform:scale(1.1);
 }
 .dim_p_pop
@@ -619,10 +622,7 @@ nav a
 .activité_col a:hover
 {
     /* L'image est grossie de 5% */
-    /*-webkit-transform:scale(1.05); /* Safari et Chrome */
-    /*-moz-transform:scale(1.05); /* Firefox */
-    /*-ms-transform:scale(1.05); /* Internet Explorer 9 */
-    /*-o-transform:scale(1.05); /* Opera */
+    
     transform:scale(1.05);
 }
 .activité_col article
@@ -738,7 +738,7 @@ nav a
 {   
     font-size:14px; 
 }
-@media all and (max-width: 1024px)
+@media (max-width: 1024px)
 {
     /* Vos règles CSS pour les tablettes ici */
     #logo,#Element_Haut header,#Element_Haut form,#filtres,#information
@@ -911,10 +911,10 @@ nav a
   
 }
 
-/*@media all and (max-device-width: 480px)*/
-@media all and (max-width: 700px)
+
+@media  (max-width: 700px)
 {
-    /* Vos règles CSS pour les mobiles ici */
+    
     #liste_hebergement a
     {
         width:45%;
@@ -1020,6 +1020,10 @@ nav a
     }
     #nav_2
     {
+        width:100%;
+    }
+    #nav_2 ul
+    {
         display:flex;
         flex-direction:row;
         flex-wrap: wrap;
@@ -1027,17 +1031,24 @@ nav a
         align-items: center;
         width:100%;
         text-align: center;
+        padding:0px;
         
         
     }
-    .menu_nav{
+    #nav_2 li{
         width:50%;
         display:flex;
         flex-direction:row;
         flex-wrap: wrap;
         justify-content:center ;
         align-items: center;
+        
+    }
+    #nav_2 a{
+        width:100%;
         text-align: center;
+        justify-content:center ;
+        align-items: center;
         min-height:50px;
         margin-top:10px;
         margin-bottom:30px;
@@ -1059,7 +1070,7 @@ nav a
     }
      
 }
-@media all and (max-width: 480px)
+@media (max-width: 480px)
 {
     /* Vos règles CSS pour les mobiles ici */
     #liste_hebergement a

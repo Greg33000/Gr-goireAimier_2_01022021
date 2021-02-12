@@ -2,6 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/styles.css" />
         <title>Réservia</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css">
@@ -17,23 +18,35 @@
             </div>
             <div id="menu">
                 <nav id="nav_1">
-                    <a href="#lieu" class="menu_nav" id="menu_heb"> 
-                        Hébergements
-                    </a>
-                    <a href="#activité" class="menu_nav" id="menu_act"> 
-                        Activités
-                    </a>
+                    <ul>
+                        <li>
+                            <a href="#lieu" class="menu_nav" id="menu_heb"> 
+                                Hébergements
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#activité" class="menu_nav" id="menu_act"> 
+                                Activités
+                            </a>
+                        </li>
+                    </ul>
                 </nav>
                 <a id="inscription"><strong>S'inscrire</strong></a>
             </div>
         </header>
         <nav id="nav_2">
-            <a href="#lieu" class="menu_nav" id="menu_heb2"> 
-                Hébergements
-            </a>
-            <a href="#activité" class="menu_nav" id="menu_act2"> 
-                Activités
-            </a>
+            <ul>
+                <li>
+                    <a href="#lieu" class="menu_nav" id="menu_heb2"> 
+                        Hébergements
+                    </a>
+                </li>
+                <li>
+                    <a href="#activité" class="menu_nav" id="menu_act2"> 
+                        Activités
+                    </a>
+                </li>
+            </ul>
         </nav>
         <section id="Element_Haut">
             <header>
@@ -45,8 +58,8 @@
                     <i id="icone_géo" class="fas fa-map-marker-alt"></i>
                     <input type="search" name="recherche" id="recherche" value="Marseille, France" />
                     <!--  <label for="recherche">Rechercher</label>  => Non nécessaire : mettre l'icone rechercher avec le mot et chaoisir en fonction de la taille écran -->
-                    <span id="mot_recherche">Rechercher</span>
-                    <span id="icone_recherche" class="fas fa-search"></span>
+                    <a href="" id="mot_recherche">Rechercher</a>
+                    <a href="" id="icone_recherche" class="fas fa-search"></a>
                 </p>
             </form>
             <div id="filtres">
@@ -168,7 +181,9 @@
                     </a>
                 </div>
                 <footer>
-                    <strong>Afficher plus</strong>
+                    <a href="">
+                        <strong>Afficher plus</strong>
+                    </a>
                 </footer>
             </section>
             <section id="populaire">
