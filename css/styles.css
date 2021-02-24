@@ -738,7 +738,8 @@ text-decoration: none;
 {   
     font-size:14px; 
 }
-@media (max-width: 1024px)
+
+@media (max-width: 1430px)
 {
     /* Vos règles CSS pour les tablettes ici */
     #logo,#Element_Haut header,#Element_Haut form,#filtres,#information
@@ -792,7 +793,7 @@ text-decoration: none;
     }
     #liste_populaire a
     {    
-        width:44%;
+        width:30%;
         min-width:100px;
         height: 135px;
         margin:0px 0px 32px 0px;
@@ -907,6 +908,16 @@ text-decoration: none;
     {
         margin:0px;
         min-width:200px;
+    }
+}
+
+@media (max-width: 1024px)
+{
+    /* Vos règles CSS pour les tablettes ici */
+    
+    #liste_populaire a
+    {    
+        width:44%;
     }
   
 }
